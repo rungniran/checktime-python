@@ -14,7 +14,7 @@ face_cascade = cv2.CascadeClassifier(haar_file)
 webcam = cv2.VideoCapture(0)
 #_______________________________________________________________________________________________________________________
 count = 1
-while count < 5:
+while count < 20:
     (_, im) = webcam.read()
     gray = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
     faces = face_cascade.detectMultiScale(gray, 1.3, 4)
